@@ -9,27 +9,27 @@ function updateValue() {
 }
 
 function getTime() {
-  hours = document.querySelector('.hours').value;
-  minutes = document.querySelector('.minutes').value;
+  let hours = document.querySelector('.hours').value;
+  let minutes = document.querySelector('.minutes').value;
   console.log(hours, minutes);
 }
 
 function convertTime(hours, minutes, from, to) {
   hours = Number(hours);
   minutes = Number(minutes);
-  
+
   let totalMinutes = minutes + hours * 60;
   let resultMinutes;
-  
+
 
   if (from === to) {
     resultMinutes = totalMinutes;
   } else if (from === 'ets2' && to === 'IRL') {
 
-    resultMinutes = totalMinutes * (3.5 / 60); 
+    resultMinutes = totalMinutes * (3.5 / 60);
   } else if (from === 'IRL' && to === 'ets2') {
 
-    resultMinutes = totalMinutes * (60 / 3.5); 
+    resultMinutes = totalMinutes * (60 / 3.5);
   }
 
   let resultHours = Math.floor(resultMinutes / 60);
@@ -45,7 +45,7 @@ function update() {
   let hours = document.querySelector('.hours').value || 0;
   let minutes = document.querySelector('.minutes').value || 0;
   convertTime(hours, minutes, from, to);
-   
+
 }
 
 document.querySelector('.from').addEventListener('change', () => {
