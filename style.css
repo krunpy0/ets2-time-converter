@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #6e47ff;
+    --secondary-color: #8a8fff;
+    --background-color: #222222;
+    --card-bg-color: #1e1e1e;
+    --card-hover-color: #2a2a2a;
+    --text-color: #ffffff;
+    --tag-color: #2d2d52;
+    --tag-text-color: #b4b4ff;
+    --glow-color: rgba(110, 71, 255, 0.5);
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.header {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #F9C58D,#F492F0,#F9C58D);
+  background-size: 300% 100%;
+  background-repeat: repeat;
+  animation: gradientMove 3000ms ease infinite;
+  -webkit-background-clip: text;  /* Для Chrome/Safari */
+  -webkit-text-fill-color: transparent;  /* Прозрачный текст */
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.header {
+  text-align: center;
+}
+.main-convert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.background {
+  max-width: 994px;
+  width: 100%;
+  height: 228px;
+  background-color: #2D2D2D;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.hours, .minutes, .from, .to {
+  margin-top: 39px;
+  max-width: 180px;
+  width: 180px;
+  height: 57px;
+  background-color: #414141;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: start;
+  font-weight: bold;
+  padding-left: 13px;
+  padding-top: 20px;
+}
+.from, .to {
+  height: 77px; /* Adjusted to match visual appearance */
+  padding-top: 0;
+}
+.hours {
+  margin-left: 39px;
+}
+.minutes {
+  margin-left: 15px;
+}
+.from {
+  margin-left: 39px;
+  padding-top: 10px;
+}
+.to {
+  margin-left: 15px;
+  padding-top: 10px;
+}
+.input-wrapper, .input-wrapper2 {
+  position: relative;
+  display: flex;
+}
+.hours-text, .minutes-text, .from-text, .to-text {
+  position: absolute;
+  color: rgb(161, 161, 161);
+  pointer-events: none;
+  font-weight: bold;
+  font-size: 15px;
+  z-index: 1;
+}
+.hours-text {
+  top: 50px;
+  left: 50px;
+}
+.minutes-text {
+  top: 50px;
+  left: 260px;
+}
+.from-text {
+  top: 50px;
+  left: 55px;
+}
+.to-text {
+  top: 50px;
+  left: 250px;
+}
+.to {
+  margin-right: 58px;
+}
+.text {
+  display: inline;
+}
+.first {
+margin-top: -80px;
+margin-left: 39px;
+color: #CCCCCC;
+font-size: 15px;
+margin-bottom: 0px;
+}
+.second {
+  margin-left: 39px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 4px;
+}

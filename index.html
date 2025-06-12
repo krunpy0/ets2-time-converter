@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <h1 class="header">Конвертер времени ETS2</h1>
+    <div class="main-convert">
+      <div class="actual-bg">
+      <div class="background">
+        <div class="input-wrapper">
+          <span class="hours-text">Часы</span>
+          <input class="hours">
+          <span class="minutes-text">Минуты</span>
+          <input class="minutes">
+        </div>
+        <div class="input-wrapper2">
+          <span class="from-text">Из</span>
+          <select class="from">
+            <option value="ets2">ETS2</option>
+            <option value="IRL">IRL</option>
+          </select>
+          <span class="to-text">В</span>
+          <select class="to">
+            <option value="IRL">IRL</option>
+            <option value="ets2">ETS2</option>
+          </select>
+        </div>
+      </div>
+      <div class="text">
+          <p class="first" class="js-first"></p>
+          <p class="second" class="js-second"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
